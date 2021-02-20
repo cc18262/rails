@@ -21,9 +21,9 @@
         <%#<td><%= post.body %></td>
         <td><%= post.logid %></td>
         <td><%= post.logpass %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '詳細', post %></td>
+        <td><%= link_to '編集', edit_post_path(post) %></td>
+        <td><%= link_to '削除', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
