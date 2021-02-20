@@ -17,7 +17,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= link_to post.body, target: :_blank, rel: "noopener noreferrer" %></td>
+        <td><%= link_to post.body, post.body, target: :_blank, rel: "noopener noreferrer" %></td>
         <%#<td><%= post.body %></td>
         <td><%= post.logid %></td>
         <td><%= post.logpass %></td>
