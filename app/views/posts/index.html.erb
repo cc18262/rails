@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Mypageチェック画面</h1>
+<h1>Mypage一覧</h1>
 
 <table>
   <thead>
@@ -17,7 +17,8 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= post.body %></td>
+        <td><%= link_to post.body, target: :_blank, rel: "noopener noreferrer" %></td>
+        <%#<td><%= post.body %></td>
         <td><%= post.logid %></td>
         <td><%= post.logpass %></td>
         <td><%= link_to 'Show', post %></td>
